@@ -33,9 +33,39 @@
 	a:visited {
 		color:#008f77;
 	}
+
+	#navbar {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		position: fixed;
+		top: 0;
+		background-color: #DDD;
+		overflow: hidden;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.item {
+		display: block;
+		text-align: center;
+		padding: 10px 10px;
+	}
+
+	.right {
+		float: right;
+	}
+
+	.left {
+		float: left;
+	}
 </style>
 
 <body>
+	<ul id="navbar">
+		<li class="item left">Clark Farley</li>
+		<li class="item right">Github</li>
+		<li class="item right">LinkedIn</li>
+	</ul>
 	<h1>Clark Farley</h1>
 	<h2>Education</h2> Bachelor's of Science in Computer Science, University of Maryland College Park
 	<h2>About Me</h2>
