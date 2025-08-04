@@ -1,17 +1,20 @@
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Clark's Home Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Clark Farley</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
 </head>
 <style>
-	h1 {
+  * {
 		font-family: "Raleway";
+	}
+
+	h1 {
 		font-weight: 200;
 	}
 
@@ -20,10 +23,23 @@
 	}
 
 	body {
-		font-family: "Raleway";
 		font-weight: 400;
 		padding-left: 20%;
 		padding-right: 20%
+	}
+
+	@media only screen and (max-width: 1024px) {
+		body {
+			padding-left: 10%;
+			padding-right: 10%
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		body {
+			padding-left: 5%;
+			padding-right: 5%
+		}
 	}
 
 	a:link {
@@ -36,12 +52,11 @@
 </style>
 
 <body>
-	<h1>Clark Farley</h1>
-	<h2>Education</h2> Bachelor's of Science in Computer Science, University of Maryland College Park
+	<header>
+		<h1>Clark Farley</h1>
+	</header>
 	<h2>About Me</h2>
-	<!-- I am a Computer Science student at the University of Maryland, College Park. My primary interest right now is web -->
-	<!-- development but I always love to learn new things and explore new technologies. I currently work for <a href="https://www.stardog.com/">Stardog</a> as a Technical Support Engineer and work to quickly resolve customer's problems when using our products. -->
-	I currently work at <a href="https://www.stardog.com/">Stardog</a> as a Cloud Engineer where I work on building and maintaining <a href="https://cloud.stardog.com">Stardog Cloud</a>. I'm currently working on setting up my own homelab to gain more experience with Linux administration.
+	I currently work at <a href="https://www.stardog.com/">Stardog</a> as a Cloud Engineer where I work on building and maintaining <a href="https://cloud.stardog.com">Stardog Cloud</a>. In my free time, I enjoy optimizing my workflow, learning about homelabbing, and playing piano.
 
 	<h2>Experience</h2>
 	<h3>Stardog, Cloud Engineer, August 2022 - Present</h3>
@@ -75,7 +90,7 @@
 		</li>
 
 	</ul>
-	<h3>Stardog, Technical Support Engineer, September 2021 - Present</h3>
+	<h3>Stardog, Technical Support Engineer, September 2021 - August 2022</h3>
 	<ul>
 		<li>
 			Analyzed and replicated customer-reported bugs reported in Salesforce to accelerate the resolution process.
@@ -128,31 +143,20 @@
 		</li>
 	</ul>	
 
-	<h3>
-		Access Intelligence, IT Intern, Jun - Aug 2016 and 2017
-	</h3>
-	<ul>
-		<li>
-			Upgraded old desktops and laptops with newer components.
-		</li>
-		<li>
-			Investigated and solved computer software and hardware problems for end users.
-		</li>
-	</ul>	
-
 	<h2>Projects</h2>
 	<ul>
 		<li>
-			<a href="https://flask-api.clarkfarley.dev">Toy Flask API</a>
+			<a href="https://github.com/ctffarley/go-vlr-cli">VLR.gg TUI</a>
 		</li>
 		<ul>
 			<li>
-				Basic Flask REST API that implements basic CRUD operations
+				A TUI client for <a href="vlr.gg">vlr.gg</a> for viewing ongoing and upcoming professional Valorant matches.
 			</li>
 			<li>
-				Uses: Flask, SQL Alchemy, Flask RESTX
+				Uses: Go, Bubbletea, Colly
 			</li>
 		</ul>
+
 		<li>
 			<a href="./CMSC320Final.html">Data Science Final Project</a>
 		</li>
@@ -165,6 +169,24 @@
 			</li>
 		</ul>
 	</ul>
+
+	<h2>Open Source Contributions</h2>
+	<ul>
+		<li><a href="https://github.com/0xstepit/flow.nvim">flow.nvim</a></li>
+		<ul>
+			<li>A Neovim color scheme</li>
+			<li><a href="https://github.com/0xstepit/flow.nvim/pull/15">Additional terminal support</a></li>
+			<li><a href="https://github.com/0xstepit/flow.nvim/pull/17">Documentation fixes</a></li>
+		</ul>
+		<li><a href="https://github.com/sschleemilch/slimline.nvim">slimline.nvim</a></li>
+		<ul>
+			<li>A Neovim statusline</li>
+			<li><a href="https://github.com/sschleemilch/slimline.nvim/pull/33">Support workspace LSP diagnostics</a></li>
+		</ul>
+	</ul>
+
+	<h2>Education</h2> Bachelor's of Science in Computer Science, University of Maryland College Park
+
 </body>
 
 </html>
